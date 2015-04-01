@@ -6,9 +6,20 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QObject::connect(ui->BaseButton, SIGNAL(clicked()),
+                     this, SLOT(updatelabel()));
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::updatelabel()
+{
+    QFont font("Arial", 100, QFont::Bold);
+    ui->BaseButton->setFont(font);
+    ui->BaseButton->setStyleSheet("color: rgb(255,0,0)");
+    ui->BaseButton->setText("BAWLZ");
 }
