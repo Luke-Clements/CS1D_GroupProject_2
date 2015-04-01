@@ -1,14 +1,3 @@
-Stadiums
-The information is in the following format:
-- Stadium Name
-- Team Name
-- Street Address
-- City, State, Zip
-- Box Office #
-- Date Opened
-- Seating Capacity
-
-
 AMERICAN LEAGUE TEAMS:
 -----------------------------
 
@@ -16,9 +5,9 @@ Angels Stadium of Anaheim
 Los Angeles Angels of Anaheim
 2000 E Gene Autry Way, 
 Anaheim, CA 92806
-(714)940-2000
-Opened – April 19, 1966
-Capacity – 45,483
+(714) 940-2000
+Opened - April 19, 1966
+Capacity - 45,483
 
 
 Comerica Park
@@ -26,8 +15,8 @@ Detroit Tigers
 2100 Woodward Ave, 
 Detroit, MI 48201
 (313) 962-4000 
-Opened – April 11, 2000
-Capacity – 41,681
+Opened - April 11, 2000
+Capacity - 41,681
 
 
 Fenway Park
@@ -35,8 +24,8 @@ Boston Red Sox
 4 Yawkey Way, 
 Boston, MA 02215
 (877) 733-7699 
-Opened – April 20, 1912
-Capacity – 37,499 (night) & 37,071 (day)
+Opened - April 20, 1912
+Capacity - 37,499 (night) & 37,071 (day)
 
 
 Globe Life Park in Arlington
@@ -44,8 +33,8 @@ Texas Rangers
 1000 Ballpark Way,
 Arlington, TX 76011
 (817) 273-5222 
-Opened – April 1, 1994
-Capacity – 48,114
+Opened - April 1, 1994
+Capacity - 48,114
 
 
 Kauffman Stadium
@@ -53,8 +42,8 @@ Kansas City Royals
 1 Royal Way
 Kansas City, MO 64129
 (816) 921-8000
-Opened – April 10, 1973
-Capacity – 37,903 
+Opened - April 10, 1973
+Capacity - 37,903 
 
 
 Minute Maid Park
