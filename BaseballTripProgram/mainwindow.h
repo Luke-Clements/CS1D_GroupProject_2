@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+#include "adminlogin.h"
+
+
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +20,8 @@ public:
 
 private slots:
     void updatelabel();
+
+    void on_AdminButton_clicked();
 
 private:
     Ui::MainWindow *ui;

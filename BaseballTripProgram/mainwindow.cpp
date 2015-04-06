@@ -23,3 +23,10 @@ void MainWindow::updatelabel()
     ui->BaseButton->setStyleSheet("color: rgb(255,0,0)");
     ui->BaseButton->setText("BAWLZ");
 }
+
+void MainWindow::on_AdminButton_clicked()
+{
+    AdminLogin *that = new AdminLogin;
+    that->setModal(true);
+    that->show();
+}
