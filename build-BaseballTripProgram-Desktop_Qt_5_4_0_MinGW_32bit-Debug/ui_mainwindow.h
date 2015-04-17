@@ -29,13 +29,15 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralWidget;
-    QWidget *gridLayoutWidget;
+    QGridLayout *gridLayout_2;
+    QSpacerItem *horizontalSpacer_3;
     QGridLayout *gridLayout;
     QPushButton *BaseButton;
     QSpacerItem *horizontalSpacer;
     QSpacerItem *horizontalSpacer_2;
     QSpacerItem *verticalSpacer;
     QSpacerItem *verticalSpacer_2;
+    QPushButton *AdminButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -47,15 +49,18 @@ public:
         MainWindow->resize(600, 400);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        gridLayoutWidget = new QWidget(centralWidget);
-        gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(10, 10, 581, 331));
-        gridLayout = new QGridLayout(gridLayoutWidget);
+        gridLayout_2 = new QGridLayout(centralWidget);
+        gridLayout_2->setSpacing(6);
+        gridLayout_2->setContentsMargins(11, 11, 11, 11);
+        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer_3, 2, 0, 1, 1);
+
+        gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
-        gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        gridLayout->setContentsMargins(0, 0, 0, 0);
-        BaseButton = new QPushButton(gridLayoutWidget);
+        BaseButton = new QPushButton(centralWidget);
         BaseButton->setObjectName(QStringLiteral("BaseButton"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
@@ -84,6 +89,14 @@ public:
 
         gridLayout->addItem(verticalSpacer_2, 0, 1, 1, 1);
 
+
+        gridLayout_2->addLayout(gridLayout, 0, 0, 2, 3);
+
+        AdminButton = new QPushButton(centralWidget);
+        AdminButton->setObjectName(QStringLiteral("AdminButton"));
+
+        gridLayout_2->addWidget(AdminButton, 2, 2, 1, 1);
+
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -105,6 +118,7 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
         BaseButton->setText(QApplication::translate("MainWindow", "Base", 0));
+        AdminButton->setText(QApplication::translate("MainWindow", "Admin Login", 0));
     } // retranslateUi
 
 };

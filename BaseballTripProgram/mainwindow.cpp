@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->BaseButton->setText("Let's play");
     QObject::connect(ui->BaseButton, SIGNAL(clicked()),
                      this, SLOT(updatelabel()));
 }
@@ -21,7 +22,7 @@ void MainWindow::updatelabel()
     QFont font("Arial", 100, QFont::Bold);
     ui->BaseButton->setFont(font);
     ui->BaseButton->setStyleSheet("color: rgb(255,0,0)");
-    ui->BaseButton->setText("BAWLZ");
+    ui->BaseButton->setText("BASEBALL");
 }
 
 void MainWindow::on_AdminButton_clicked()

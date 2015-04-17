@@ -26,7 +26,7 @@ void AdminLogin::on_LoginButton_clicked()
     connect(ui->PasswordLineEdit, SIGNAL(returnPressed()),
             ui->LoginButton, SLOT(click()));
 
-    if (password == "asdf" || password == "bawlz")
+    if (password == "asdf" || password == "bawlz" || password == "1234")
     {
         Maintenance *maintain = new Maintenance;
         maintain->show();

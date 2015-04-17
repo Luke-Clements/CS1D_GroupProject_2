@@ -6,6 +6,7 @@ Maintenance::Maintenance(QWidget *parent) :
     ui(new Ui::Maintenance)
 {
     ui->setupUi(this);
+    ui->BackButton->setText("Work in progress. Go back");
 }
 
 Maintenance::~Maintenance()

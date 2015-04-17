@@ -13,11 +13,18 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    adminlogin.cpp \
+    maintenance.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    adminlogin.h \
+    maintenance.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    adminlogin.ui \
+    maintenance.ui
 
 DISTFILES += \
-    StadiumList.txt
+    StadiumList.txt \
+    BaseballTripProgram.pro.user
